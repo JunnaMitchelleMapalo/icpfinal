@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Foriegn Langauge</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- <img src="japanbg.gif" alt=""> -->
+    <div class="button-container">
+        <div class="transparent-button" id="culture-button">Culture</div>
+        <div class="transparent-button" id="traditions-button">Traditions</div>
+        <div class="transparent-button" id="tourist-spots-button">Tourist Spots</div>
+        <div class="transparent-button" id="about-button">Culture</div>
+
+    </div>
+
+    <script>
+        // Add event listeners to the elements acting as links
+        document.getElementById('culture-button').addEventListener('click', function() {
+            // Redirect to culture page
+            window.location.href = 'culture.html';
+        });
+
+        document.getElementById('traditions-button').addEventListener('click', function() {
+            // Redirect to traditions page
+            window.location.href = 'traditions.html';
+        });
+        document.getElementById('tourist-spots-button').addEventListener('click', function() {
+            // Redirect to tourist spots page
+            window.location.href = 'touristspot.html';
+        });
+        document.getElementById('about-button').addEventListener('click', function() {
+            // Redirect to about page
+            window.location.href = 'about.html';
+        });
+    </script>
+</body>
+</html>

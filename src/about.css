@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F1E4DC;
+    background-image: url('contentbg.gif');
+    background-size: 85% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+h1, h2{
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 65%; /* Adjusted width */
+    max-height: calc(100vh - 120px); /* Set maximum height for the content area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: rgba(255, 255, 255, 0.596); /* Adjust alpha channel for transparency */
+    padding: 20px;
+    margin: 20px auto; /* Center the content horizontally */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.back-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: solid 1px #F1E4DC;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(241, 239, 239, 0.5);
+}

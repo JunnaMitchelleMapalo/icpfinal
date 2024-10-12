@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    background-color: #F1E4DC;
+    background-image: url('assets/download.jpg');
+    background-size: 100% auto; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 70px; 
+    height: 120px;
+}
+
+.transparent-button {
+    padding: 20px; 
+    width: 170px; 
+    height: 120px; 
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+    color: #333; 
+    background-color: rgba(231, 222, 222, 0.7); 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.transparent-button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
